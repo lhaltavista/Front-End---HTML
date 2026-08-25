@@ -27,13 +27,77 @@
 
     <main>
         <h1>Reproducción del VIDEO en MAIN</h1>
-        <video controls poster="../imagenes/stratocaster.png" width="600"   height="400">
+        <video controls poster="../imagenes/stratocaster.png" width="600"   height="400"> <!..ruta relativa al file>
             <source src="" type="">
         </video>
         <iframe width="810" height="607" src="https://www.youtube.com/embed/cpMkYNPyWeU" title="Guitarras Classic.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     
      <!--El atributo href sirve para crear un hipervínculo que lleva al usuario a otra página o recurso, mientras que la etiqueta <iframe> permite incrustar una página web o contenido externo directamente dentro de la página actual-->
-    
+        <h2>Listado de modelos disponibles en stock</h2>
+        <table border="6">
+            <caption><strong>Guitarras en stock</strong></caption>
+            <thead>    <!--define la cabecera (Fila madre)-->
+                <tr>    <!--Row == FILA, siempre se definen FILAS-->
+                    <th>Marca</th> <!--F11-->     <!--th == td, th para encabezados y td para contenido-->
+                    <th>Modelo</th> <!--F12-->
+                    <th>Cantidad</th> <!--F13-->
+                </tr>
+            </thead>
+            <tbody>  <!--es lo que va abajo de la fila madre, se completa de arriba hacia abajo-->
+                <tr>
+                    <td rowspan="4">Gibson</td>    <!--combino filas con rowspan (biblio dice verticalmente)-->
+                    <td>Les Paul</td>                
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>SG</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Firebird</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>E-335</td>
+                    <td>5</td>
+                </tr>
+                              
+                <tr>
+                    <td rowspan="2">Fender</td>   
+                    <td>Stratocaster</td>
+                    <td>6</td>          
+                </tr>
+                <tr>
+                    <td>Telecaster</td>
+                    <td>6</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">Epiphone</td>
+                    <td>Flying V</td>
+                    <td>1</td>
+                </tr>
+                
+                <tr>
+                    <td>Les Paul</td>
+                    <td>6</td>
+                </tr>
+                
+                <tr>
+                    <td>Casino</td>
+                    <td>10</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><strong>Total stock</strong></td>   <!--combino columnas (horizontalmente)-->
+                    <td>36</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
     </main>
     
     <footer>
