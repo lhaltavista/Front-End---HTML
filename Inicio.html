@@ -8,13 +8,10 @@
 <body>
 <h2><strong>Formulario de Contacto</strong></h2>
 <p>Introduzca los datos solicitados:</p>
-<form action="/registro" method="post" autocomplete="on">
-<label>Nombre: <input type="text" name="nombre" required></label>
-<br>
-<br>
-<label>Correo: <input type="email" name="correo" required></label>
-<br>
-<button
-
+<form action="/procesar.php" method="POST">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" name="usuario">
+  <button type="submit">Enviar</button>
+</form>
 </body>
 </html>
