@@ -24,3 +24,13 @@
     gap: 20px;
     /* Añade espacio entre cada elemento */
 }
+
+
+/*.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}*/ /*en el caso de querer agragar la font en alguna clase, hacer referencia a font-family:"Roboto"*/
