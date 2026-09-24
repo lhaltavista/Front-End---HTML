@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda de Guitarras</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+}
+
+/* HEADER */
+
+header{
+    background:#222;
+    color:white;
+    padding:20px;
+}
+
+.header-container{
+    max-width:1200px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* LOGO */
+
+.logo{
+    width:180px;
+    height:80px;
+
+    background:white;
+    color:black;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* NAV */
+
+nav{
+    background:#444;
+}
+
+nav ul{
+    max-width:1200px;
+    margin:auto;
+
+    list-style:none;
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    display:block;
+    padding:15px 20px;
+
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    background:#666;
+}
+
+/* PRODUCTOS */
+
+.productos{
+    max-width:1200px;
+    margin:20px auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+
+    padding:0 20px;
+}
+
+.producto{
+    padding:20px;
+    border-radius:10px;
+    min-height:220px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+
+.producto h2{
+    margin-bottom:10px;
+}
+
+.producto p{
+    margin-bottom:15px;
+}
+
+.precio{
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+/* COLORES DE PRODUCTOS */
+
+.p1{background:#ffadad;}
+.p2{background:#ffd6a5;}
+.p3{background:#fdffb6;}
+.p4{background:#caffbf;}
+.p5{background:#9bf6ff;}
+.p6{background:#a0c4ff;}
+.p7{background:#bdb2ff;}
+.p8{background:#ffc6ff;}
+.p9{background:#d8f3dc;}
+.p10{background:#ffe5ec;}
+
+/* FOOTER */
+
+footer{
+    background:#222;
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+    margin-top:20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:600px){
+
+    .header-container{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    .productos{
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-container">
+
+        <div class="logo">
+            LOGO
+        </div>
+
+        <div>
+            <h1>Tienda de Guitarras</h1>
+            <p>Guitarras, amplificadores y accesorios</p>
+        </div>
+
+    </div>
+
+</header>
+
+<nav>
+
+    <ul>
+        <li>#Inicio</a></li>
+        <li>#Guitarras</a></li>
+        <li>#Amplificadores</a></li>
+        <li>#Pedales</a></li>
+        <li>#Accesorios</a></li>
+        <li>#Contacto</a></li>
+    </ul>
+
+</nav>
+
+<main class="productos">
+
+    <div class="producto p1">
+        <h2>Producto 1</h2>
+        <p>Descripción del producto.</p>
+        <div class="precio">$100</div>
+    </div>
+
+    <div class="producto p2">
+        <h2>Producto 2</h2>
+        <p>Descripción del producto.</p>
+        <div class="precio">$200</div>
+    </div>
+
+    <div class="producto p3">
+        <h2>Producto 3</h2>
+        <p>Descripción del producto.</p>
+        <div class="precio">$300</div>
+    </div>
+
+    <div class="producto p4">
+        <h2>Producto 4</h2>
+        <p>Descripción del producto.</p>
+        <div class="precio">$400</div>
+    </div>
+
+    <div class="producto p5">
+        <h2>Producto 5</h2>
+        <p>Descripción del producto.</p>
+        <div class="precio">$500</div>
+    </div>
+
+    <div class="producto p6">
+        <h2>Producto 6</h2>
+        <p>Descripción del producto.</p>
+        <div class="precio">$600</div>
+    </div>
+
+    <div class="producto p7">
+        <h2>Producto 7</h2>
+        <p>Descripción del producto.</p>
+        <div class="precio">$700</div>
+    </div>
+
+    <div class="producto p8">
+        <h2>Producto 8</h2>
+        <p>Descripción del producto.</p>
+        <div class="precio">$800</div>
+    </div>
+
+    <div class="producto p9">
+        <h2>Producto 9</h2>
+        <p>Descripción del producto.</p>
+        <div class="precio">$900</div>
+    </div>
+
+    <div class="producto p10">
+        <h2>Producto 10</h2>
+        <p>Descripción del producto.</p>
+        <div class="precio">$1000</div>
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Tienda de Guitarras - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

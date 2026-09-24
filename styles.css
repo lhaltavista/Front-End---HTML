@@ -22,18 +22,21 @@ body{
 /* HEADER */
 
 header{
-    background:#ff6b6b;
+    background:#1a1a1a;  /*marshall black*/
+    /*background-image: url("img/fondo_1.png");*/
     padding:20px;
-    margin-bottom:10px;
+    margin-bottom:1px;
     border-radius:8px;
 }
 
-.header-contenido{
+.header-contenido{   /*es el <div> de guitar shop*/
     display:flex;
-    justify-content:space-between;
+    justify-content:flex-start;   /*acomodo los <DIV> de logo y leyenda a la izquierda*/
     align-items:center;
     gap:20px;
     flex-wrap:wrap;
+    color:#aa820a;    /*dorado marshall*/
+    font-size: 25px;
 }
 
 /* DIV DEL LOGO */
@@ -42,23 +45,19 @@ header{
     width:auto;
     height:auto;
     /*background:white;*/  /*afecta al contenedor <div>*/
-    border:1px solid #333;
+    border:1px;
     border-radius:8px;
-
     display:flex;
     justify-content:left;
     align-items:center;
-
-    /*font-weight:bold;*/
-    /*font-size:1.2rem;*/
 }
 
 /* NAV */
 
 nav{
-    background:#4dabf7;
+    background:#1a1a1a;
     padding:20px;
-    margin-bottom:10px;
+    margin-bottom:1px;    /*separación respecto de las otras cajas (botton)*/
     border-radius:8px;
 }
 
@@ -67,12 +66,12 @@ nav ul{
     display:flex;
     gap:15px;
     flex-wrap:wrap;
-    justify-content: right;
+    justify-content: space-around; /* indico el tipo espaciamiento de los <DIV> que conforman al NAV*/
 }
 
 nav a{
     text-decoration:none;
-    color:black;
+    color:#aa820a;
     font-weight:bold;
 }
 
@@ -81,31 +80,35 @@ nav a{
 main{
     display:flex;
     gap:10px;
-    margin-bottom:10px;
+    margin-bottom:1px;    /*separación vertical con el footer*/
 }
 
 /* SECTION */
 
-section{     /*Nuestro Productos*/
-    flex:3;
-    background:#69db7c;
+section{     /*Nuestros Productos*/
+    flex:3;             /*Cómo funciona con números:0: El elemento no crece aunque haya espacio libre.1: El elemento crece de 
+                        forma equitativa compartiendo el espacio sobrante con los demásque tengan 1.2 o más: 
+                        El elemento crece el doble (o el triple) más rápido que los que tienen valo*/
+    background:#1a1a1a;
     padding:20px;
     border-radius:8px;
+    color:#aa820a;             /*color del texto*/
 }
 
 /* ARTICLE */
 
 article{     /*Guitarras...*/
-    background:#ffd43b;
+    background:#aa820a;;
     padding:20px;
     margin-top:15px;
     border-radius:8px;
+    color:antiquewhite;   /*color del texto*/
 }
 
 /* ASIDE */
 
 aside{
-    flex:1;
+    flex:1;     /* Define cuánto debe crecer un elemento en proporción a sus hermanos si sobra espacio libre en el contenedor*/
     background:#b197fc;
     padding:20px;
     border-radius:8px;
@@ -114,11 +117,12 @@ aside{
 /* FOOTER */
 
 footer{
-    background:#868e96;
-    color:white;
+    background:#111111;
+    color:#aa820a;
     padding:20px;
     border-radius:8px;
     text-align: center;
+    text
 }
 
 
