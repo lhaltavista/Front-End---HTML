@@ -105,27 +105,25 @@ article{     /*Guitarras...*/
     color:antiquewhite;   /*color del texto*/
 }
 
-/* ASIDE */
-
-aside{
-    flex:1;     /* Define cuánto debe crecer un elemento en proporción a sus hermanos si sobra espacio libre en el contenedor*/
-    background:#b197fc;
-    padding:20px;
-    border-radius:8px;
-}
 
 /* FOOTER */
 
-footer{
+footer{                               /*usar contenedores clase 7, ver archivo*/
     background:#111111;
     color:#aa820a;
     padding:20px;
     border-radius:8px;
-    text-align: center;
-    text
+    display: flex;   
+    align-items: center;
 }
 
-
+.footer-container{
+    /*text-align: center;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* RESPONSIVE */
 
