@@ -1,66 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar Shop</title> <!--es titulo que aparace en la pestaña del navegador-->
+    <title>---Guitar Shop---</title>
     <link rel="stylesheet" href="styles.css"> <!--enlace a un archivo CSS externo-->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"> <!-- font de google fonts - ROBOTO-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">  <!--para poder usar FONT AWESOME íconos-->
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!--para poder usar FONT AWESOME íconos-->
+
 </head>
 
-<body> <!-- a partir de acá comienza el contenido de la página WEB, lo anterior es setting-->
+<body>
 
-    <header>
-        <div class="logo"><img src="../img/logo.png" alt="Logo de Guitar Shop" alig="left" vertical-align="middle"
-                width="100" height="100"></div>
-        <!--contenedor que alberga al logo-->
-    </header>
+    <div class="wrapper"> <!-- CONTENEDOR GENERAL (wrapper: término normalizado)-->
 
-    <div>
-        <p>
-            <!--Búsqueda de productos:-->
-            <input type="search" name="busqueda" placeholder="Guitarras, Amplificadores, Accesorios...">
+        <header>
 
-            <input type="submit" value="Buscar">
-        </p>
+            <div class="header-contenido">
+
+                <div class="logo">
+                    <!--contenedor que alberga al logo, para que sea mas facil la maquetación. buena práctica-->
+                    <img src="../img/logo.png" alt="Logo de Guitar Shop" class="logo">
+                    <!--invoco la imagen y apunto al CSS-->
+                </div>
+
+                <div>
+                    <h1>Guitar Shop</h1>
+                    <p>Donde el Rock vive</p>
+                </div>
+
+            </div>
+
+        </header>
+
+        <nav>
+
+            <ul>
+                <!--<li><a href="./pages/index.html">Home</a></li>-->
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <!-- puse <a> ya que posee comportamiento INLINE-->
+                <li><a href="/pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/carrito.html">Carrito</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+
+            <section>
+
+                <h2>Nuestros productos</h2>
+
+                <article>
+
+                    <h3>Guitarras Eléctricas (agregar link)</h3>
+
+                    <p>
+                        contenedro fender - gibson - epihpone - squire con link a pagina con listado de productos
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>Guitarras Electroacústicas (agregar link)</h3>
+
+                    <p>
+                        contenedro fender - gibson - epihpone con link a pagina con listado de productos
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>Amplificadores (agregar link)</h3>
+
+                    <p>
+                        contenedro marshall - Vox con link a pagina con listado de productos
+                    </p>
+
+                </article>
+
+                <article>
+
+                    <h3>Accesorios (agregar link)</h3>
+
+                    <p>
+                        contenedor con link a listado de productos varios (cables puas, correas soportes, afinadores)
+                    </p>
+
+                </article>
+
+            </section>
+
+            <aside>
+
+                <h3>Sección de Info gral.</h3>
+
+                <p>
+                    Contactos deluthiers, talleres, clases de guitarra, etc..
+                </p>
+
+            </aside>
+
+        </main>
+
+        <footer>
+            <i class="fa-brands fa-instagram"></i>
+            <span>guitar.shop.ok </span>
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>+54 9 11 6666 9111</span>
+            <i class="fa-sharp fa-regular fa-envelope"></i>
+            <span>info@guitarshop.com.ar</span>
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            <span>11 5555-6666</span>
+            <i class="fa-sharp fa-solid fa-location-pin"></i>
+            <span>Avenida La cuerda 1010 </span>
+        </footer>
+
     </div>
-    <!--Barra de navegación con: 1) menu - 2) barra de busqueda 3)cascada desplegable-->
-    <nav class="nav_bar">
-        <ul class="menu">
-            <!--<li><a href="./pages/index.html">Home</a></li>-->
-            <li><a href="./pages/nosotros.html">Nosotros</a></li> <!-- puse <a> ya que posee comportamiento INLINE-->
-            <li><a href="/pages/servicios.html">Servicios</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-            <li><a href="./pages/carrito.html">Carrito</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <!--El atributo href sirve para crear un hipervínculo que lleva al usuario a otra página o recurso, mientras que la etiqueta <iframe> permite incrustar una página web o contenido externo directamente dentro de la página actual-->
-        <div>
-            <h3>box1-guitarras</h3>
-        </div>
-        <div>
-            <h3>box2-accesorios</h3>
-        </div>
-        <div>
-            <h3>box3-amplificadores</h3>
-        </div>
-
-    </main>
-
-    <footer>
-        <i class="fa-brands fa-instagram"></i>
-        <h3>box4-footer</h3>
-    
-    </footer>
 
 </body>
 
