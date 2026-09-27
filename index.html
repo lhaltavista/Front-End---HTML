@@ -19,84 +19,85 @@
 
 <body>
 
-    <div class="wrapper"> <!-- CONTENEDOR GENERAL (wrapper: término normalizado)-->
+    <header>
 
-        <header>
+        <div class="header-contenido">
 
-            <div class="header-contenido">
-
-                <div class="logo">
-                    <!--contenedor que alberga al logo, para que sea mas facil la maquetación. buena práctica-->
-                    <img src="../img/logo.png" alt="Logo de Guitar Shop" class="logo">
-                    <!--invoco la imagen y apunto al CSS-->
-                </div>
-                <div>
-                    <h3><p><strong>Guitar Shop</strong><br> <em>donde el rock vive...</em></p></h3>
-                </div>
+            <div class="logo">
+                <!--contenedor que alberga al logo, para que sea mas facil la maquetación. buena práctica-->
+                <img src="../img/logo.png" alt="Logo de Guitar Shop" class="logo">
+                <!--invoco la imagen y apunto al CSS-->
             </div>
+            <div>
+                <h3>
+                    <p><strong>Guitar Shop</strong><br> <em>donde el rock vive...</em></p>
+                </h3>
+            </div>
+        </div>
 
-        </header>
+    </header>
 
-        <nav>
+    <nav>
 
-            <ul>
-                <!--<li><a href="./pages/index.html">Home</a></li>-->
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <!-- puse <a> ya que posee comportamiento INLINE-->
-                <li><a href="/pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/carrito.html">Carrito</a></li>
-            </ul>
+        <ul>
+            <!--<li><a href="./pages/index.html">Home</a></li>-->
+            <li><a href="./pages/nosotros.html">Nosotros</a></li>
+            <!-- puse <a> ya que posee comportamiento INLINE-->
+            <li><a href="/pages/servicios.html">Servicios</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="./pages/carrito.html">Carrito</a></li>
+        </ul>
 
-        </nav>
+    </nav>
 
-        <main>
+    <main>
 
-            <section>
+        <section>
 
-                <h2>Nuestros productos</h2>
+            <h2>Nuestras Marcas</h2>
 
-                <article>
+            <article>
 
-                    <h3>Guitarras Eléctricas (agregar link)</h3>
+            <!--   <a href="./pages/guitelect.html" class="box-article"><strong>Guitarras Eléctricas</strong></a>
+                <div class="box-article"><img src="../img/logo-fender.png" alt="Logo de Fender"></div>
+                <div class="box-article"><img src="../img/logo-squire.png" alt="Logo de Squire"></div>
+                <div class="box-article"><img src="../img/logo-gibson.png" alt="Logo de Gibson"></div>
+                <div class="box-article"><img src="../img/logo-epiphone.png" alt="Logo de Epiphone"></div>
+            --> 
+            </article>
 
-                    <p>contenedro fender - gibson - epihpone - squire con link a pagina con listado de productos</p>
+            <article>
+                <h3>Guitarras Electroacústicas (agregar link)</h3>
+                <p>ntenedro fender - gibson - epihpone con link a pagina con listado de productos</p>
+            </article>
 
-                </article>
+            <article>
+                <h3>Amplificadores (agregar link)</h3>
+                <p>contenedro marshall - Vox con link a pagina con listado de productos</p>
+            </article>
 
-                <article>
-                    <h3>Guitarras Electroacústicas (agregar link)</h3>
-                    <p>ntenedro fender - gibson - epihpone con link a pagina con listado de productos</p>
-                </article>
+            <article>
+                <h3>Accesorios (agregar link)</h3>
+                <p>contenedor con link a listado de productos varios (cables puas, correas soportes, afinadores)</p>
+            </article>
 
-                <article>
-                    <h3>Amplificadores (agregar link)</h3>
-                    <p>contenedro marshall - Vox con link a pagina con listado de productos</p>
-                </article>
+        </section>
 
-                <article>
-                    <h3>Accesorios (agregar link)</h3>
-                    <p>contenedor con link a listado de productos varios (cables puas, correas soportes, afinadores)</p>
-                </article>
+    </main>
 
-            </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box"><i class="fa-brands fa-instagram"></i><span>guitar.shop.ok</span></div>
+            <div class="footer-box"><i class="fa-brands fa-whatsapp"></i><span>+54911-6666-9111</span></div>
+            <div class="footer-box"><i class="fa-sharp fa-regular fa-envelope"></i><span>info@guitarshop.com.ar</span>
+            </div>
+            <div class="footer-box"><i class="fa-sharp fa-solid fa-phone"></i><span>11 5555-6666</span></div>
+            <div class="footer-box"><i class="fa-sharp fa-solid fa-location-pin"></i><span>Avenida La cuerda 1010</span>
+            </div>
+        </div>
+    </footer>
 
-            <!--<aside>
-                <h3>Sección de Info gral.</h3>
-                <p>Contactos deluthiers, talleres, clases de guitarra, etc..</p>
-            </aside> -->
 
-        </main>
-
-        <footer>
-            <div class="footer-container"><i class="fa-brands fa-instagram"></i><span>guitar.shop.ok</span></div>
-            <div class="footer-container"><i class="fa-brands fa-whatsapp"></i><span>+54911-6666-9111</span></div>
-            <div class="footer-container"><i class="fa-sharp fa-regular fa-envelope"></i><span>info@guitarshop.com.ar</span></div>
-            <div class="footer-container"><i class="fa-sharp fa-solid fa-phone"></i><span>11 5555-6666</span></div>
-            <div class="footer-container"><i class="fa-sharp fa-solid fa-location-pin"></i><span>Avenida La cuerda 1010</span></div>       
-        </footer>
-
-    </div>
 
 </body>
 
