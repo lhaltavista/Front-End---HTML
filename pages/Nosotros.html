@@ -1,45 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitarrería Almagro</title>
+    <title>---Guitar Shop---</title>
+    <link rel="stylesheet" href="/styles.css"> <!--enlace a un archivo CSS externo-->
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"> <!-- font de google fonts - ROBOTO-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <!--para poder usar FONT AWESOME íconos-->
+
 </head>
 
 <body>
-     <header>
-        <div class="logo"><img src="../img/logo.png" alt="Logo de Guitar Shop" alig="left" vertical-align="middle"
-                width="100" height="100"></div>
-        <!--contenedor que alberga al logo-->
+
+    <header>
+
+        <div class="header-contenido">
+
+            <div class="logo">
+                <!--contenedor que alberga al logo, para que sea mas facil la maquetación. buena práctica-->
+                <img src="../img/logo.png" alt="Logo de Guitar Shop" class="logo">
+                <!--invoco la imagen y apunto al CSS-->
+            </div>
+            <div>
+                <h3>
+                    <p><strong>Guitar Shop</strong><br> <em>donde el rock vive...</em></p>
+                </h3>
+            </div>
+        </div>
+
     </header>
 
-    <div>
-        <p>
-            <!--Búsqueda de productos:-->
-            <input type="search" name="busqueda" placeholder="Guitarras, Amplificadores, Accesorios...">
+    <nav>
 
-            <input type="submit" value="Buscar">
-        </p>
-    </div>
-    <!--Barra de navegación con: 1) menu - 2) barra de busqueda 3)cascada desplegable-->
-    <nav class="nav_bar"> 
-        <ul class="menu">
-            <!--<li><a href="./pages/index.html">Home</a></li>-->
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li> <!-- puse <a> ya que posee comportamiento INLINE-->
-            <li><a href="carrito.html">Carrito</a></li>
+        <ul>
+            <li><a href="../index.html">Volver</a></li> <!-- puse <a> ya que posee comportamiento INLINE-->
+            <li><a href="/pages/servicios.html">Servicios</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="/pages/carrito.html">Carrito</a></li>
         </ul>
+
     </nav>
+
     <main>
-        <p>Somos un empresa familiar radicada en Caballito hace mas de 50 años..</p>
+        <article>
+            <p>Somos un empresa familiar radicada en Caballito hace mas de 50 años.. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime reiciendis iusto enim suscipit eligendi tenetur modi esse porro laudantium sint qui quas autem magnam, explicabo similique dolorum minima! Nisi, sit?</p>
+        </article>
 
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-container"> <!--¿es necesario?-->
+            <div class="footer-box"><i class="fa-brands fa-instagram"></i><span>guitar.shop.ok</span></div>
+            <div class="footer-box"><i class="fa-brands fa-whatsapp"></i><span>+54911-6666-9111</span></div>
+            <div class="footer-box"><i class="fa-sharp fa-regular fa-envelope"></i><span>info@guitarshop.com.ar</span>
+            </div>
+            <div class="footer-box"><i class="fa-sharp fa-solid fa-phone"></i><span>11 5555-6666</span></div>
+            <div class="footer-box"><i class="fa-sharp fa-solid fa-location-pin"></i><span>Avenida La cuerda 1010</span>
+            </div>
+        </div>
+    </footer>
 
-
-    <a href="../index.html">Volver</a>
 </body>
 
 

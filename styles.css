@@ -28,11 +28,14 @@ header {
 .header-contenido {
     /*es el <div> de guitar shop*/
     display: flex;
-    justify-content: flex-start;     /*acomodo los <DIV> de logo y leyenda a la izquierda*/
+    justify-content: flex-start;
+    /*acomodo los <DIV> de logo y leyenda a la izquierda*/
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;     /*Permite a los items flexibles pasar a la siguiente linea si no caben en el contenedor*/
-    color: #aa820a;     /*dorado marshall*/
+    flex-wrap: wrap;
+    /*Permite a los items flexibles pasar a la siguiente linea si no caben en el contenedor*/
+    color: #aa820a;
+    /*dorado marshall*/
     font-size: 25px;
 }
 
@@ -87,51 +90,73 @@ main {
 
 /* SECTION */
 
-section {    /*NUESTROS PRODUCTOS*/
-    
+section {
+    /*NUESTROS PRODUCTOS*/
+
     background: #1a1a1a;
     padding: 20px;
     border-radius: 8px;
-    color: #aa820a;     /*color del texto*/
-    width: 100%;     /*pongo para forzar a que abarque el ancho total, de lo contrario queda reducida para que entre <aside>*/
+    color: #aa820a;
+    /*color del texto*/
+    width: 100%;
+    /*pongo para forzar a que abarque el ancho total, de lo contrario queda reducida para que entre <aside>*/
 }
 
 /* ARTICLE */
 
 article {
     /*Guitarras...*/
-    background: rgb(82, 78, 78);
+    background: #1a1a1a;
     padding: 20px;
-    margin-top: 15px;
+    margin-top: 1px;
     border-radius: 8px;
-    color: #aa820a;    /*color del texto*/
+    color: #aa820a;
+    /*color del texto*/
     display: flex;
-    justify-content: space-between;     /*eje x*/
-    align-items: center;     /*eje y*/
+    justify-content: space-between;
+    /*eje x*/
+    align-items: center;
+    /*eje y*/
     flex-wrap: wrap;
 }
 
-.article-1 {  /*GUITARRAS ELÉCTRICAS*/
+.article-1 {
+    /*GUITARRAS ELÉCTRICAS*/
     background-image: url('img/fondo\ articulo\ 1.png');
-    background-repeat: no-repeat;    /* Evita que la imagen se repita */
-    background-size: cover;          /* Ajusta la imagen para que cubra todo el espacio */
-    background-position: center;     /* Centra la imagen en la pantalla */
-    background-attachment: fixed;    /* Mantiene la imagen fija al hacer scroll */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-size: cover;
+    /* Ajusta la imagen para que cubra todo el espacio */
+    background-position: center;
+    /* Centra la imagen en la pantalla */
+    background-attachment: fixed;
+    /* Mantiene la imagen fija al hacer scroll */
 }
 
-.article-2 {  /*AMPLIFICADORES*/
+.article-2 {
+    /*AMPLIFICADORES*/
     background-image: url('img/fondo\ articulo\ 2.png');
-    background-repeat: no-repeat;    /* Evita que la imagen se repita */
-    background-size: cover;          /* Ajusta la imagen para que cubra todo el espacio */
-    background-position: center;     /* Centra la imagen en la pantalla */
-    background-attachment: fixed;    /* Mantiene la imagen fija al hacer scroll */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-size: cover;
+    /* Ajusta la imagen para que cubra todo el espacio */
+    background-position: center;
+    /* Centra la imagen en la pantalla */
+    background-attachment: fixed;
+    /* Mantiene la imagen fija al hacer scroll */
 }
-.article-3 {  /*ACCESORIOS*/
-    background-image: url('img/fondo\ articulo\ 1.png');
-    background-repeat: no-repeat;    /* Evita que la imagen se repita */
-    background-size: cover;          /* Ajusta la imagen para que cubra todo el espacio */
-    background-position: center;     /* Centra la imagen en la pantalla */
-    background-attachment: fixed;    /* Mantiene la imagen fija al hacer scroll */
+
+.article-3 {
+    /*ACCESORIOS*/
+    background-image: url('img/fondo\ articulo\ 3.png');
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-size: cover;
+    /* Ajusta la imagen para que cubra todo el espacio */
+    background-position: center;
+    /* Centra la imagen en la pantalla */
+    background-attachment: fixed;
+    /* Mantiene la imagen fija al hacer scroll */
 }
 
 .box-article {
@@ -146,7 +171,8 @@ article {
     display: flex;
     justify-content: center;
     font-size: 20px;
-    color: white;
+    color: #aa820a;
+    /*color del texto*/
     align-items: center;
     border-radius: 8px;
     background-color: black;
@@ -168,6 +194,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-box {
@@ -175,6 +202,91 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.formulario {
+
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    /*fondo de contendor fomulario  #1a1a1a*/
+    padding: 20px;
+
+    label {
+        display: block;
+    }
+
+    input[type=text] {
+        /*nombre*/
+        width: 30%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 3px solid #aa820a;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    input[type=number] {
+        /*tel.*/
+        width: 30%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 3px solid #aa820a;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    input[type=email],
+    /*correo*/
+    select {
+        width: 30%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 3px solid #aa820a;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        /*mensaje*/
+        width: 30%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 3px solid #aa820a;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+}
+
+.tabla-mensajes {
+
+    table {
+        width: 100%;
+        border-collapse: collapse;      /* Une los bordes de las celdas */
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;    /* Borde gris claro */
+        padding: 12px 15px;         /* Espacio interno */
+        text-align: center;    /* Centra el texto horizontalmente */
+        vertical-align: middle; /* Centra el contenido verticalmente */
+    }
+
+    th {
+        background-color: #e7e6e0;        /* Fondo para la cabecera */
+        text-align: center;
+        font-weight: bold;
+    }
+
+}
+
+
 
 /* RESPONSIVE */
 
