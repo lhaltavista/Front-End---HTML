@@ -87,32 +87,36 @@ section{     /*Nuestros Productos*/
     background:#1a1a1a;
     padding:20px;
     border-radius:8px;
-    color:#aa820a;             /*color del texto*/
+    color:#aa820a; /*color del texto*/
+    width: 100%;  /*pongo para forzar a que abarque el ancho total, de lo contrario queda reducida para que entre <aside>*/
 }
 
 /* ARTICLE */
 
 article{     /*Guitarras...*/
-    background:red;;
+    background:rgb(82, 78, 78);;
     padding:20px;
     margin-top:15px;
     border-radius:8px;
-    color:antiquewhite;   /*color del texto*/
+    color:rgb(215, 250, 229);   /*color del texto*/
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between; /*eje x*/
+    align-items: center; /*eje y*/
+    flex-wrap: wrap;
 }
 
 .box-article{
-    width: 100px;
-	height: 80px;
+    width: 260px; /*233px*/ /*fender logo (imagen mas grande)*/
+	height: 180px; /*150px*/
 	padding: 10px;
-	/*border: 2px solid #333;*/
-	margin: 20px;
+	border: 2px solid #333;
+	margin: 10px;
     display:flex;
     justify-content:center;
 	font-size:20px;
     color: white;
 	align-items:center;
+    border-radius:8px;
 
 }
 
