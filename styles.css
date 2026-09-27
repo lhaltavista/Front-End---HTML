@@ -1,142 +1,176 @@
 /* RESET */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    /*background:#1a1a1a;*/  /*sacr de comentario al finalizar para eliminar lo blanco*/
-    padding:20px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*background:#1a1a1a;*/
+    /*sacr de comentario al finalizar para eliminar lo blanco*/
+    padding: 20px;
 }
 
 
 /* HEADER */
 
-header{
-    background:#1a1a1a;  /*marshall black*/
+header {
+    background: #1a1a1a;
+    /*marshall black*/
     /*background-image: url("img/fondo_1.png");*/
-    padding:20px;
-    margin-bottom:1px;
-    border-radius:8px;
+    padding: 20px;
+    margin-bottom: 1px;
+    border-radius: 8px;
 }
 
-.header-contenido{   /*es el <div> de guitar shop*/
-    display:flex;
-    justify-content:flex-start;   /*acomodo los <DIV> de logo y leyenda a la izquierda*/
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;   /*Permite a los items flexibles pasar a la siguiente linea si no caben en el contenedor*/
-    color:#aa820a;    /*dorado marshall*/
+.header-contenido {
+    /*es el <div> de guitar shop*/
+    display: flex;
+    justify-content: flex-start;     /*acomodo los <DIV> de logo y leyenda a la izquierda*/
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;     /*Permite a los items flexibles pasar a la siguiente linea si no caben en el contenedor*/
+    color: #aa820a;     /*dorado marshall*/
     font-size: 25px;
 }
 
 /* DIV DEL LOGO */
 
-.logo{
-    width:auto;
-    height:auto;
-    /*background:white;*/  /*afecta al contenedor <div>*/
-    border:1px;
-    border-radius:8px;
-    display:flex;
-    justify-content:left;
-    align-items:center;
+.logo {
+    width: auto;
+    height: auto;
+    /*background:white;*/
+    /*afecta al contenedor <div>*/
+    border: 1px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 /* NAV */
 
-nav{
-    background:#1a1a1a;
-    padding:20px;
-    margin-bottom:1px;    /*separación respecto de las otras cajas (botton)*/
-    border-radius:8px;
-    font-size:large;
+nav {
+    background: #1a1a1a;
+    padding: 20px;
+    margin-bottom: 1px;
+    /*separación respecto de las otras cajas (botton)*/
+    border-radius: 8px;
+    font-size: large;
 }
 
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-    justify-content: space-around; /* indico el tipo espaciamiento de los <DIV> que conforman al NAV*/
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* indico el tipo espaciamiento de los <DIV> que conforman al NAV*/
 }
 
-nav a{
-    text-decoration:none;
-    color:#aa820a;
-    font-weight:bold;
+nav a {
+    text-decoration: none;
+    color: #aa820a;
+    font-weight: bold;
 }
 
 /* MAIN */
 
-main{
-    display:flex;
-    gap:10px;
-    margin-bottom:1px;    /*separación vertical con el footer*/
+main {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1px;
+    /*separación vertical con el footer*/
 }
 
 /* SECTION */
 
-section{     /*Nuestros Productos*/
-    /*flex:4;*/             /*Cómo funciona con números:0: El elemento no crece aunque haya espacio libre.1: El elemento crece de 
-                        forma equitativa compartiendo el espacio sobrante con los demásque tengan 1.2 o más: 
-                        El elemento crece el doble (o el triple) más rápido que los que tienen valo*/
-    background:#1a1a1a;
-    padding:20px;
-    border-radius:8px;
-    color:#aa820a; /*color del texto*/
-    width: 100%;  /*pongo para forzar a que abarque el ancho total, de lo contrario queda reducida para que entre <aside>*/
+section {    /*NUESTROS PRODUCTOS*/
+    
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    color: #aa820a;     /*color del texto*/
+    width: 100%;     /*pongo para forzar a que abarque el ancho total, de lo contrario queda reducida para que entre <aside>*/
 }
 
 /* ARTICLE */
 
-article{     /*Guitarras...*/
-    background:rgb(82, 78, 78);;
-    padding:20px;
-    margin-top:15px;
-    border-radius:8px;
-    color:rgb(215, 250, 229);   /*color del texto*/
-    display:flex;
-    justify-content: space-between; /*eje x*/
-    align-items: center; /*eje y*/
+article {
+    /*Guitarras...*/
+    background: rgb(82, 78, 78);
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    color: #aa820a;    /*color del texto*/
+    display: flex;
+    justify-content: space-between;     /*eje x*/
+    align-items: center;     /*eje y*/
     flex-wrap: wrap;
 }
 
-.box-article{
-    width: 260px; /*233px*/ /*fender logo (imagen mas grande)*/
-	height: 180px; /*150px*/
-	padding: 10px;
-	border: 2px solid #333;
-	margin: 10px;
-    display:flex;
-    justify-content:center;
-	font-size:20px;
+.article-1 {  /*GUITARRAS ELÉCTRICAS*/
+    background-image: url('img/fondo\ articulo\ 1.png');
+    background-repeat: no-repeat;    /* Evita que la imagen se repita */
+    background-size: cover;          /* Ajusta la imagen para que cubra todo el espacio */
+    background-position: center;     /* Centra la imagen en la pantalla */
+    background-attachment: fixed;    /* Mantiene la imagen fija al hacer scroll */
+}
+
+.article-2 {  /*AMPLIFICADORES*/
+    background-image: url('img/fondo\ articulo\ 2.png');
+    background-repeat: no-repeat;    /* Evita que la imagen se repita */
+    background-size: cover;          /* Ajusta la imagen para que cubra todo el espacio */
+    background-position: center;     /* Centra la imagen en la pantalla */
+    background-attachment: fixed;    /* Mantiene la imagen fija al hacer scroll */
+}
+.article-3 {  /*ACCESORIOS*/
+    background-image: url('img/fondo\ articulo\ 1.png');
+    background-repeat: no-repeat;    /* Evita que la imagen se repita */
+    background-size: cover;          /* Ajusta la imagen para que cubra todo el espacio */
+    background-position: center;     /* Centra la imagen en la pantalla */
+    background-attachment: fixed;    /* Mantiene la imagen fija al hacer scroll */
+}
+
+.box-article {
+    width: 260px;
+    /*233px*/
+    /*fender logo (imagen mas grande)*/
+    height: 180px;
+    /*150px*/
+    padding: 10px;
+    border: 2px solid #333;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
     color: white;
-	align-items:center;
-    border-radius:8px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: black;
 
 }
 
 /* FOOTER */
 
-footer{                               /*usar contenedores clase 7, ver archivo*/
-    background:#1a1a1a;
-    color:#aa820a;
-    padding:20px;
-    border-radius:8px;
+footer {
+    /*usar contenedores clase 7, ver archivo*/
+    background: #1a1a1a;
+    color: #aa820a;
+    padding: 20px;
+    border-radius: 8px;
 }
 
-.footer-container{
+.footer-container {
     /*text-align: center;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-box{
+.footer-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,23 +178,24 @@ footer{                               /*usar contenedores clase 7, ver archivo*/
 
 /* RESPONSIVE */
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    main{
-        flex-direction:column;
+    main {
+        flex-direction: column;
     }
 
-    .header-contenido{
-        flex-direction:column;
-        text-align:center;
+    .header-contenido {
+        flex-direction: column;
+        text-align: center;
     }
 
-    nav ul{
-        flex-direction:column;
+    nav ul {
+        flex-direction: column;
     }
 
-    footer{
-        flex-direction: column;  /*no responde al comando VER*/
+    footer {
+        flex-direction: column;
+        /*no responde al comando VER*/
     }
 
 }
