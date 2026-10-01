@@ -312,6 +312,21 @@ footer {
 
 }
 
+/*PAGINA NOSOTROS*/
+.box-nosotros {
+    width: 502px;
+    height: 320px;
+    padding: 10px;
+    border: 2px solid #aa820a;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: black;
+
+}
+
 
 /*PÁGINAS DE PRODUCTOS (GUITARRAS ELÉCTRICAS - AMPLIFICADORES - ACCESORIOS*/
   .grid-container {
@@ -342,6 +357,8 @@ footer {
             text-align: center;
             background: black;
         }
+
+       
 
         /***************MEDIA QUERIES (DATOS DE LA TÉORICA)*********************/
 
