@@ -329,37 +329,78 @@ footer {
 
 
 /*PÁGINAS DE PRODUCTOS (GUITARRAS ELÉCTRICAS - AMPLIFICADORES - ACCESORIOS*/
-  .grid-container {
-            display: grid;
+  .contenedor-tarjetas {
+            /*display: grid;*/
+            display:flex; /*trabajo en una dimensión x*/
             border: 2px solid;
             border-radius: 8px;
             /*grid-template-columns:1fr 1fr auto; /*puse auto ya que de esta forma la columnas ocupan todo el ancho delgrid container principal*/
             /*grid-template-rows: 1fr 1fr 1fr; /*En CSS Grid, fr significa "fraction" (fracción) y se utiliza para distribuir el espacio disponible de forma proporcional entre filas o columnas.*/
             gap: 10px;
             background: #1a1a1a;
-            justify-content: space-around;
+            justify-content: center;
            
-
         }
+
+    /*.contenedor-tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1100px;
+        }*/
 
         .tarjeta {
             width: 600px;
             height: 400px;
             border: 2px solid #aa820a;
             border-radius: 8px;
-            background:rgba(119, 116, 116, 0.767);
+            background:black;
             padding: 15px;
             margin: 20px;
             text-align: center;
-        }
-
-        .header {
-            text-align: center;
-            background: black;
+            display: flex;
+                       
         }
 
        
+       
+        .titulo-producto {
+            font-size: 1.1rem;
+            color: #aa820a;
+            margin-bottom: 8px;
+        }
+        
+         .descripcion-producto {
+            font-size: 0.9rem;
+            color: #ffffff;
+            margin-bottom: 12px;
+            flex-grow: 1;
+        }
+         
+        .precio-producto {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color:  #aa820a;
+            margin-bottom: 16px;
+        }
 
+        .btn-comprar {
+            background-color: #aa820a;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+         .btn-comprar:hover {  /*efecto al pasar el pointer*/
+            background-color: red;
+        }
         /***************MEDIA QUERIES (DATOS DE LA TÉORICA)*********************/
 
         /*Tablets*/
